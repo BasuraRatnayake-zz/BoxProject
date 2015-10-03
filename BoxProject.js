@@ -28,7 +28,7 @@ function BoxProject(){
 		});
 		$('.boxBodyText').html(boxText);
 		$('.boxTitle').html(boxTitle);
-		$('.overlay,.boxContainer').fadeIn('slow')
+		$('.overlay,.boxContainer').fadeIn('slow');
 	}
 	this.showConfirm=function(boxTitle,boxText,confirmed){//Show Confirm Box		
 		clear();				
