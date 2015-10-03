@@ -24,7 +24,7 @@ Bp.showConfirm('Confirm Box Title Goes Here','Confirm Message Goes Here',
 To Show a Prompt Dialog
 Bp.showPrompt('Prompt Box Title Goes Here','Prompt Message Goes Here',
 	function(data){//The Data entered inside the prompt box can be accessed from this function
-		console.log(data)
+		console.log(data);
 	}
 );
 
