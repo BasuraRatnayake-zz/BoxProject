@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>BoxProject 1.0 - Custom Alert,Confirm and Prompt</title>
+</head>
+
+<body>
+	<div style="text-align:center; font:bold 40px Arial, Helvetica, sans-serif, Calibri;margin-top:50px">BoxProject 1.0</div>
+	<div style="text-align:center; font:bold 12px Arial, Helvetica, sans-serif, Calibri">Custome Alert,Confirm and Prompt Dialogs</div>    
+	<div style="text-align:center; font:12px Arial, Helvetica, sans-serif, Calibri">Copyright (C) 2015 ~ Basura Ratnayake ~ amuthupuwath@gmail.com</div>
+    <div align="center" style="margin-top:20px">
+        <button id="SA">Show Custom Alert</button>
+        <button id="SP">Show Custom Prompt</button>
+        <button id="SC">Show Custom Confirm</button>
+    </div>
+	<script type="text/javascript" src="jquery-1.11.3.min.js"></script> 
+    <script type="text/javascript" src="BoxProject.js"></script> 
+    <script type="text/javascript">
+	var Bp=new BoxProject();
+	Bp.init();
+	$('#SP').click(function(){
+		Bp.showPrompt('Error Showing Results','Try reloading the page and if the error continues <br/>please notify us',
+			function(a){
+				console.log(a)
+			}
+		);
+	})
+	$('#SA').click(function(){
+		Bp.showAlert('Error Showing Results','Try reloading the page and if the error continues <br/>please notify us');
+	})
+	$('#SC').click(function(){
+		Bp.showConfirm('Error Showing Results','Try reloading the page and if the error continues <br/>please notify us',
+			function(){
+				console.log("k")
+			}
+		);
+	})
+	</script>
+</body>
+</html>
