@@ -22,7 +22,7 @@
 	$('#SP').click(function(){
 		Bp.showPrompt('Error Showing Results','Try reloading the page and if the error continues <br/>please notify us',
 			function(a){
-				console.log(a)
+				console.log(a);
 			}
 		);
 	})
