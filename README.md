@@ -8,37 +8,37 @@ JQuery 1.* or higher (http://jquery.com/)
 
 Add the BoxProject JavaScript to your web page
 
-<script type="text/javascript" src="BoxProject.js"></script> 
+	<script type="text/javascript" src="BoxProject.js"></script> 
 
 Declare a New Object
 
-var Bp=new BoxProject();
+	var Bp=new BoxProject();
 
 To Show an Alert Dialog
 
-Bp.showAlert('Error Box Title Goes Here','Error Message Goes Here');
+	Bp.showAlert('Error Box Title Goes Here','Error Message Goes Here');
 
 To Show a Confirm Dialog
 
-Bp.showConfirm('Confirm Box Title Goes Here','Confirm Message Goes Here',
+	Bp.showConfirm('Confirm Box Title Goes Here','Confirm Message Goes Here',
 
-	function(){//If Yes Button Clicked the Code inside this function executes
+		function(){//If Yes Button Clicked the Code inside this function executes
 	
-		console.log("yes button clicked")
+			console.log("yes button clicked")
 		
-	}
-);
+		}
+	);
 
 To Show a Prompt Dialog
 
-Bp.showPrompt('Prompt Box Title Goes Here','Prompt Message Goes Here',
+	Bp.showPrompt('Prompt Box Title Goes Here','Prompt Message Goes Here',
 
-	function(data){//The Data entered inside the prompt box can be accessed from this function
+		function(data){//The Data entered inside the prompt box can be accessed from this function
 	
-		console.log(data);
+			console.log(data);
 		
-	}
-);
+		}
+	);
 
 # License
 
