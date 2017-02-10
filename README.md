@@ -44,7 +44,7 @@ To Show a Prompt Dialog
 
 BoxProject 1.0 is covered by the MIT License.
 
-Copyright (C) 2015 ~ Basura Ratnayake ~ amuthupuwath@gmail.com
+Copyright (C) 2015 ~ Basura Ratnayake ~ basuraratnayake@protonmail.com
 
 
 
